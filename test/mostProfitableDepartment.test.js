@@ -17,10 +17,11 @@ it ('Should return most profitable department', function(){
     {department : 'carpentry', sales : 6109, day : 'Thursday'},
     {department : 'hardware', sales : 7005, day : 'Friday'},
     {department : 'outdoor', sales : 12006, day : 'Friday'},
-    {department : 'carpentry', sales : 16109, day : 'Friday'},
+    {department : 'carpentry', sales : 16109, day : 'Friday'}
 ];
 
-assert.deepEqual(mostProfitableDepartment(salesData),'outdoor')
+    var dept = mostProfitableDepartment(salesData);
+    assert.equal(dept ,'outdoor')
 
   });
 });
