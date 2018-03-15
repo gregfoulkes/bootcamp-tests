@@ -9,6 +9,3 @@ function transportFee(shift){
   return "free"
   }
 };
-console.log(transportFee('morning'))
-console.log(transportFee('afternoon'))
-console.log(transportFee('nightshift'))

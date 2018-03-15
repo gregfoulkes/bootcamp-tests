@@ -1,3 +1,4 @@
+
 function countAllPaarl(reg) {
  var paarl = [];
  var splitReg = reg.split(',');
@@ -8,5 +9,6 @@ function countAllPaarl(reg) {
    }
   }
   console.log(paarl)
+
   return paarl.length;
 }

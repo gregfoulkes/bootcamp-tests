@@ -1,9 +1,8 @@
 describe ('totalPhoneBill', function(){
   it ('Should calculate total cost of calls',function(){
-    var phone = 'call, call, sms, call, sms';
-    var call = 3;
-    var sms = 2;
-  var total= call*2.75 + sms*0.65;
-    assert.equal(totalPhoneBill(phone),"R"+total.toFixed(2));
+    assert.equal(totalPhoneBill('call, call, sms, call, sms'),"R9.55");
+  });
+  it ('Should calculate total cost of calls',function(){
+    assert.equal(totalPhoneBill('call, call, call, call, sms'),"R11.65");
   });
 });

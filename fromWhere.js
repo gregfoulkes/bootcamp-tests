@@ -12,8 +12,3 @@ function  fromWhere(reg){
   return 'Some other place!'
   }
 };
-
-console.log(fromWhere('CA 46531'))
-console.log(fromWhere('CY 45645'))
-console.log(fromWhere('CJ 35465'))
-console.log(fromWhere('GP 35465'))

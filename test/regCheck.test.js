@@ -1,8 +1,9 @@
 
 describe ('regCheck',function(){
   it ('returns true if reg from Cape Town', function(){
-    var reg =('64646454 GP');
-    var loc =('GP');
-    assert.equal(regCheck(reg,loc),true);
+    assert.equal(regCheck('64646454 GP','GP'),true);
+  });
+  it('returns false if reg not from Cape Town', function(){
+    assert.equal(regCheck('CA 989878','GP'),false)
   });
 });

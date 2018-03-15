@@ -1,7 +1,11 @@
 describe ('transportFee', function(){
-it ('Should calculate transport fee',function(){
+it ('Should return R20',function(){
   assert.equal(transportFee('morning'),'R20');
-  assert.equal(transportFee('afternoon'),'R10');
-  assert.equal(transportFee('nightshift'),'free')
   });
+  it ('Should return R10',function(){
+    assert.equal(transportFee('afternoon'),'R10');
+    });
+    it ('Should return free',function(){
+      assert.equal(transportFee('nightshift'),'free')
+      });
 });

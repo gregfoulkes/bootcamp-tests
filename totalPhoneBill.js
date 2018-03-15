@@ -13,8 +13,7 @@ for (var i = 0; i<splitBill.length; i++){
 	}
 console.log(call)
 console.log(sms)
-total= call*2.75 + sms*0.65;
+var total= call*2.75 + sms*0.65;
   console.log(total)
 return "R"+total.toFixed(2);
 }
-
